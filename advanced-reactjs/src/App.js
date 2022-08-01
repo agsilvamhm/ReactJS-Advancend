@@ -1,22 +1,18 @@
 import React, {Component} from 'react';
+import Twitter from "./Twitter";
 
-class Twitter extends Component{
-
-  componentWillMount(){
-    console.log('componentWillMount')
-  }
-
-  componentDidMount(){
-    console.log('componetDidMount')
-  }
-
-   render(){
-    return (
-      <div>
-        teste
-      </div>
-    )
-   }
+class App extends Component {
+    render (){
+        const posts= [{
+            title: 'xpto',
+            description: 'foo'
+        },
+        {
+            title: 'xpto',
+            description: 'foo'
+        }]
+        return (
+            <Twitter posts={posts}/>
+        )
+    }
 }
-
-export default Twitter;
